@@ -1,0 +1,23 @@
+{
+  "name": "Quizlet",
+  "author": "KucoDEV",
+  "description": "Trouve toutes les réponses à tes questions sur Quizlet !",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.quizlet.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "/images/logo.png"
+    }
+  },
+  "icons": {
+    "32": "/images/logo.png"
+  }
+}

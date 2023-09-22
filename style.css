@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #101010;
+}
+
+body {
+  background-color: #112;
+  font-family: "Roboto Slab", "Times New Roman", "Times", serif;
+  color: white;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.title-header {
+  border-bottom: 1px dashed #666;
+}
+
+.title-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.popup-body {
+  width: 300px;
+  height: 370px;
+}
+
+main {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row + .row {
+  margin-top: 5px;
+}
+
+.scan-btn {
+  margin-right: 10px;
+  border: none;
+  border-radius: 0.25em;
+  background-color: rgb(181, 213, 222);
+}
+
+.scan-btn:hover {
+  background-color: rgb(163, 197, 206);
+}
+
+.scan-btn:active {
+  background-color: rgb(140, 163, 170)
+}
+
+fieldset {
+  padding: 5px;
+}
+
+fieldset + fieldset {
+  margin-top: 10px;
+}
+
+.activities {
+  width: 280px;
+  max-width: 280px;
+  margin-top: 10px;
+  overflow-x: hidden;
+  color: #cce;
+}
+
+.activities p {
+  color: #ccc;
+}
+
+#btn-stop {
+  margin-left: auto;
+  background-color: rgb(180, 60, 60);
+  border: 1px solid rgb(104, 34, 34);
+}
+
+#btn-stop:hover {
+  background-color: rgb(203, 78, 78);
+}
+#btn-stop:active {
+  background-color: rgb(255, 184, 184);
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+#slider-copy-time {
+  max-width: 110px;
+}
+
+#slider-copy-time-label {
+  margin-left: 5px;
+  max-width: 55px;
+}
+
+.btn-activity {
+  background-color: white;
+  border: 1px solid gray;
+}
+.btn-activity + .btn-activity {
+  margin-left: 1px;
+}
+.btn-activity:hover {
+  background-color: #ddd;
+  border: 1px solid #666;
+}
+.btn-activity:active {
+  background-color: rgb(194, 195, 212);
+}
+
+.textarea-label {
+  margin-top: 10px;
+}
+
+textarea {
+  font-family: "Roboto Mono", monospace;
+  resize: none;
+  background-color: #1b1b22;
+  color: gray;
+
+  transition: color 300ms;
+}
+textarea:focus-within {
+  outline: none !important;
+  color: lightgray;
+}
+
+#load-label {
+  margin-right: 5px;
+}

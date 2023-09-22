@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="popup.js" defer></script>
+  <script src="settings.js" defer></script>
+  <title>Quizlet</title>
+</head>
+<body class="popup-body">
+  <header class="title-header">
+    <p class="title-text">Quizlet</p>
+  </header>
+  <main>
+    <div class="row">
+      <input class="scan-btn" type="button" value="Scan">
+      <p class="scan-txt">Aucune data</p>
+    </div>
+    <fieldset class="activities">
+      <legend>Paramètres Quizlet</legend>
+      <div class="row">
+        <p style="min-width: 90px">Cooldown:</p>
+        <input type="range" name="slider-copy-time" id="slider-copy-time" min="10" max="2000" value="100" step="10">
+        <label id="slider-copy-time-label" for="slider-copy-time">200ms</label>
+      </div>
+      <div class="row">
+        <input class="btn-activity" id="btn-start" type="button" value="Start Activité">
+        <input class="btn-activity" id="btn-match" type="button" value="Start Match">
+        <input id="btn-stop" type="button" value="STOP TOUT">
+      </div>
+    </fieldset>
+    <fieldset class="settings">
+      <legend>Paramètres avancés</legend>
+      <div>
+        <label for="btn-spell" id="load-label"> → Charger:</label>
+      </div>
+      <div class="load-buttons">
+        <input class="btn-activity btn-load" data-load="learn" id="load-learn" type="button" value="Learn">
+        <input class="btn-activity btn-load" data-load="write" id="load-write" type="button" value="Write">
+        <input class="btn-activity btn-load" data-load="spell" id="load-spell" type="button" value="Spell">
+        <input class="btn-activity btn-load" data-load="match" id="load-match" type="button" value="Match">
+        <input class="btn-activity btn-load" data-load="live" id="load-live" type="button" value="Live">
+        <br>
+      </div>
+      <label class="textarea-label" for="querySelector" id="querySelector-label">Sélecteur de requête de terme</label>
+      <textarea name="querySelector" id="querySelector" cols="30" rows="3" spellcheck="false" autocapitalize="none" autocomplete="off" autocorrect="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">* How to Use a Custom Query! *
+        Activity: Right click, inspect, find the HTML for the term, and input it here.
+        
+        Tips: For a class use a period (Ex: ".class"). For an id, use a hashtag (Ex: "#id").</textarea>
+
+      <label class="textarea-label" for="mcQuery" id="mcQuery-label">Touche pas tu vas tout niquer</label>
+      <textarea name="mcQuery" id="mcQuery" cols="30" rows="1" spellcheck="false" autocapitalize="none" autocomplete="off" autocorrect="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">.a1ik211e</textarea>
+      <textarea name="mcQuery2" id="mcQuery2" cols="30" rows="1" spellcheck="false" autocapitalize="none" autocomplete="off" autocorrect="off" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">section .FormattedText</textarea>
+    </fieldset>
+  </main>
+</body>
+</html>
